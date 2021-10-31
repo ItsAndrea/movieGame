@@ -6,7 +6,7 @@ Created by Andrea <br>
 📌 Un usuario debe ser capaz de navegar por el sistema sin perderse <br>
 📌 Cuando un jugador clickee una respuesta debe mostrarse si es correcta u incorrecta <br>
 📌 Diseño responsivo <br>
-📌 Un jugador debe dar solamente 1 click(Sin contar los clicks de cada pregunta) <br>
+📌 Un jugador debe dar solamente 2 clicks(Sin contar los clicks de cada pregunta) <br>
 📌 Deben haber 10 preguntas en total <br>
 📌 2 botones: Play y re-start <br>
 ### 🚩 Design <br>
