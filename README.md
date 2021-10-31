@@ -1,8 +1,9 @@
-# Guess the movie game
+# Guess the movie game 👾
 ## Software development plan(Waterfall Methodology)
-Duration => <br>
+Duration => 📍<br>
 Created by Andrea <br>
 ### 🚩 Requirements <br>
+📌
 ### 🚩 Design <br>
 ### 🚩 Implementation <br>
 ### 🚩 Verification <br>
