@@ -36,6 +36,6 @@ Contiene un h1 y un botón con la función re-start.
     }
     
 ### 🚩 Verification <br>
-Fase en donde se ejecuto el sistema y se realizo una comprobacion de los requerimientos escritos arriba.
+Fase en donde se ejecuto el sistema y se realizo una verificacion de los requerimientos escritos arriba.
 ### 🚩 Maintenance <br>
 Este proyecto no dispondra de mantenimiento. 
