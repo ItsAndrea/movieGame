@@ -2,6 +2,7 @@
 ## Software development plan(Waterfall Methodology or a try)
 Construction time 📍 30/10/2021 - <br>
 Created by Andrea <br>
+Watch the proyect alive - 
 ### 🚩 Requirements <br>
 📌 Un usuario debe ser capaz de navegar por el sistema sin perderse <br>
 📌 Cuando un jugador clickee una respuesta debe mostrarse si es correcta u incorrecta <br>
