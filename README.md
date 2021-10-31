@@ -1,6 +1,6 @@
 # Guess the movie game 👾
 ## Software development plan(Waterfall Methodology or a try)
-Duration 📍<br>
+Construction time 📍 30/10/2021 - <br>
 Created by Andrea <br>
 ### 🚩 Requirements <br>
 📌 Un usuario debe ser capaz de navegar por el sistema sin perderse <br>
