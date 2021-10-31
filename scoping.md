@@ -22,6 +22,17 @@ Contiene un h1, los cuadrados respresentan las imagenes y 3 elementos de opcione
 #### Pagina del final
 Contiene un h1 y un botón con la función re-start.
 ### 🚩 Implementation <br>
+    function play(argumentos){
+    // Al presionar el botón "play" se llama a esta función que inicia el juego
+    }
+<br>
 
+    Cuando espiche un boton, se activaran los colores para saber si es correcto o no
+<br>
+
+    function restart(argumentos){
+    // Al presionar el botón "restart" se llama a esta función que re-inicia el juego
+    }
+    
 ### 🚩 Verification <br>
 ### 🚩 Maintenance <br>
