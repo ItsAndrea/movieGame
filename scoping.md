@@ -16,7 +16,7 @@ Created by Andrea <br>
 
 
 ### 🚩 Implementation <br>
-The file 'questions.json' contains the game content
+The file 'questions.json' contains the game content <br>
 Check 'index.html' and 'game.html' for more <br>
 
     function chooseRandomQuestion(){
