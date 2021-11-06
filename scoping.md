@@ -2,17 +2,13 @@
 ## Software development plan(Waterfall Methodology or a try)
 Construction time 📍 30/10/2021 - 06/11/2021<br>
 Created by Andrea <br>
-Watch the proyect alive - 
+
 ### 🚩 Requirements <br>
-📌 Un usuario debe ser capaz de navegar por el sistema sin perderse <br>
-📌 Cuando un jugador clickee una respuesta debe mostrarse si es correcta u incorrecta <br>
-📌 Diseño responsivo <br>
-📌 Un jugador debe dar solamente 2 clicks(Sin contar los clicks de cada pregunta) <br>
-📌 Deben haber 10 preguntas en total <br>
-📌 2 botones: Play y re-start <br>
+📌 A user must be able to navigate the system without getting lost <br>
+📌 When a player clicks on an answer it should be shown whether it is correct or incorrect <br>
+📌 Responsive design <br>
+📌 There should be 10 questions in total <br>
 ### 🚩 Design <br>
-#### ⚠ Disclaimer ⚠ <br>
-Utilice photoshop para crear los templates y no tengo mucha experiencia usando el programa, por lo que se ve horrible. De todas formas soy programadora y no diseñadora asi que no importa. 
 ![homePage](https://user-images.githubusercontent.com/85640313/139603468-37425001-4a4f-4997-b2ef-5e6e5696297d.jpg)
 #### Pagina de inicio 
 Contiene un elemento h1 y un botón con la función play. 
@@ -23,19 +19,47 @@ Contiene un h1, los cuadrados respresentan las imagenes y 3 elementos de opcione
 #### Pagina del final
 Contiene un h1 y un botón con la función re-start.
 ### 🚩 Implementation <br>
-    function play(argumentos){
-    // Al presionar el botón "play" se llama a esta función que inicia el juego
-    }
+The file 'questions.json' contains the game content
+Check 'index.html' and 'game.html' for more <br>
+
+    function chooseRandomQuestion(){
+            chooseQuestion(Math.floor(Math.random() * interpreter_bq.length))
+        }
 <br>
 
-    Cuando espiche un boton, se activaran los colores para saber si es correcto o no
+    function chooseQuestion(n){
+            quest = interpreter_bq[n]
+            select_id("question").innerHTML = quest.question
+            select_id("img").setAttribute("src", quest.img)
+            style("img").objectFit = quest.objectFit;
+            messAnswers(quest)
 <br>
 
-    function restart(argumentos){
-    // Al presionar el botón "restart" se llama a esta función que re-inicia el juego
-    }
+    function messAnswers(quest){
+            possible_answers = [
+                quest.incorrect1, 
+                quest.answer, 
+                quest.incorrect2
+            ]
+            possible_answers.sort(()=>Math.random()-0.5)
+            select_id("btn1").innerHTML = possible_answers[0]
+            select_id("btn2").innerHTML = possible_answers[1]
+            select_id("btn3").innerHTML = possible_answers[2]
+        }
+<br>        
+        
+        function press_btn(i){
+            if(possible_answers[i]==quest.answer){
+                btn_correspondent[i].style.background = "#2FBF71"
+            } else{
+                btn_correspondent[i].style.background = "#EF2D56"
+            }
+            setTimeout(() => {
+                restart_btn()
+            }, 300);
+        }
     
 ### 🚩 Verification <br>
-Fase en donde se ejecuto el sistema y se realizo una verificacion de los requerimientos escritos arriba.
+Phase where the system was executed and a verification of the above requirements was performed.
 ### 🚩 Maintenance <br>
-Este proyecto no dispondra de mantenimiento. 
+This project will be maintenance free. 
