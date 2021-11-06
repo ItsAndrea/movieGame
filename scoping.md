@@ -57,6 +57,10 @@ Check 'index.html' and 'game.html' for more <br>
         }
     
 ### 🚩 Verification <br>
-Phase where the system was executed and a verification of the above requirements was performed.
+Phase where the system was executed and a verification of the above requirements was performed <br> 
+📌 A user must be able to navigate the system without getting lost ✔️<br>
+📌 When a player clicks on an answer it should be shown whether it is correct or incorrect ✔️<br>
+📌 Responsive design ✔️<br>
+📌 There should be 10 questions in total ✔️
 ### 🚩 Maintenance <br>
 This project will be maintenance free. 
