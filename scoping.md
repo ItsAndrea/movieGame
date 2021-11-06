@@ -9,15 +9,12 @@ Created by Andrea <br>
 📌 Responsive design <br>
 📌 There should be 10 questions in total <br>
 ### 🚩 Design <br>
-![homePage](https://user-images.githubusercontent.com/85640313/139603468-37425001-4a4f-4997-b2ef-5e6e5696297d.jpg)
-#### Pagina de inicio 
-Contiene un elemento h1 y un botón con la función play. 
-![questions](https://user-images.githubusercontent.com/85640313/139603476-3c63dfcc-04e1-4e49-871a-1cfc076f3472.jpg)
-#### Pagina del juego
-Contiene un h1, los cuadrados respresentan las imagenes y 3 elementos de opciones de respuesta. Cuando un jugador escoja una respuesta debe mostrarse si es correcta u incorrecta.
-![endPage](https://user-images.githubusercontent.com/85640313/139603480-5107f293-3ccc-4cc5-8fb1-a887ca65e70d.jpg)
-#### Pagina del final
-Contiene un h1 y un botón con la función re-start.
+## Index Page
+![index](https://user-images.githubusercontent.com/85640313/140626838-e9000bc4-2140-40c1-9741-734b66088766.png)
+## Game Page
+![game](https://user-images.githubusercontent.com/85640313/140626848-902dd81f-6016-48b8-95d9-352374cccd18.png)
+
+
 ### 🚩 Implementation <br>
 The file 'questions.json' contains the game content
 Check 'index.html' and 'game.html' for more <br>
