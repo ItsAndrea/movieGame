@@ -1,6 +1,6 @@
 # Guess the movie game 👾
 ## Software development plan(Waterfall Methodology or a try)
-Construction time 📍 30/10/2021 - <br>
+Construction time 📍 30/10/2021 - 06/11/2021<br>
 Created by Andrea <br>
 Watch the proyect alive - 
 ### 🚩 Requirements <br>
