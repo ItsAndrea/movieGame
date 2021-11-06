@@ -1,0 +1,72 @@
+[
+    {
+        "question": "What is this movie?",
+        "answer": "Home Alone",
+        "incorrect1": "A Christmas Story",
+        "incorrect2": "The Santa Clause",
+        "img": "img/homealone.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "13 Going on 30",
+        "incorrect1": "17 Again",
+        "incorrect2": "Freaky Friday",
+        "img": "img/13Goingon30.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "Finding Nemo",
+        "incorrect1": "Shark Tale",
+        "incorrect2": "Rio",
+        "img": "img/FindingNemo.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "Juno",
+        "incorrect1": "Easy A",
+        "incorrect2": "Super Bad",
+        "img": "img/Juno.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "La La Land",
+        "incorrect1": "Her",
+        "incorrect2": "Me before you",
+        "img": "img/LaLaLand.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "Mean Girls",
+        "incorrect1": "Clueless",
+        "incorrect2": "Bring it on",
+        "img": "img/MeanGirls.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "Ratatouille",
+        "incorrect1": "Happy Feet",
+        "incorrect2": "Up",
+        "img": "img/ratatouille.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "Space Jam",
+        "incorrect1": "Tom and Jerry",
+        "incorrect2": "The Cat in the Hat",
+        "img": "img/SpaceJam.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "The Godfather",
+        "incorrect1": "Casino",
+        "incorrect2": "Scarface",
+        "img": "img/The_Godfather.jpg"
+    },
+    {
+        "question": "What is this movie?",
+        "answer": "Titanic",
+        "incorrect1": "The perfect storm",
+        "incorrect2": "Poseidon",
+        "img": "img/titanic.jpg"
+    }
+]

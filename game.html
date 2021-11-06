@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Game</title>
+</head>
+<body>
+    <style>
+        *{
+            transition: all 0.3s;
+        }
+        body {
+            background: #56CBF9;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-family: calibri;
+            font-size: 120%;
+        }
+
+        .container{
+            width: 98vw;
+            height: 97vh;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+        }
+
+        .btn{
+            background: white;
+            width: 60%;
+            padding: 10px;
+            margin: 5px;
+            max-width: 550px;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            background: rgb(200, 229, 236);
+            transform: scale(1.05);
+        }
+
+        .img{
+            object-fit: cover;
+            height: 50%;
+            width: 50%;
+        }
+    </style>
+
+    <div class='container'>
+        <div class='question' id='question' style="font-size: 80px;">
+        </div>
+        <img src="" class="img" id='img'>
+        <div class="btn" id="btn1" onclick="press_btn(0)">Opcion 1</div>
+        <div class="btn" id="btn2" onclick="press_btn(1)">Opcion 2</div>
+        <div class="btn" id="btn3" onclick="press_btn(2)">Opcion 3</div>
+    </div>
+    <script>
+        let base_questions = readText('questions.json')
+        let interpreter_bq = JSON.parse(base_questions)
+        let quest
+        let possible_answers
+        let btn_correspondent = [
+            select_id("btn1"),
+            select_id("btn2"),
+            select_id("btn3")
+        ]
+
+        chooseRandomQuestion()
+        function chooseRandomQuestion(){
+            chooseQuestion(Math.floor(Math.random() * interpreter_bq.length))
+        }
+        
+        function chooseQuestion(n){
+            quest = interpreter_bq[n]
+            select_id("question").innerHTML = quest.question
+            select_id("img").setAttribute("src", quest.img)
+            style("img").objectFit = quest.objectFit;
+            messAnswers(quest)
+        }
+        let btns = [
+            select_id("btn1"),
+            select_id("btn2"),
+            select_id("btn3")
+        ]
+        function messAnswers(quest){
+            possible_answers = [
+                quest.incorrect1, 
+                quest.answer, 
+                quest.incorrect2
+            ]
+            possible_answers.sort(()=>Math.random()-0.5)
+            select_id("btn1").innerHTML = possible_answers[0]
+            select_id("btn2").innerHTML = possible_answers[1]
+            select_id("btn3").innerHTML = possible_answers[2]
+        }
+        
+        function press_btn(i){
+            if(possible_answers[i]==quest.answer){
+                btn_correspondent[i].style.background = "#2FBF71"
+            } else{
+                btn_correspondent[i].style.background = "#EF2D56"
+            }
+            setTimeout(() => {
+                restart_btn()
+            }, 300);
+        }
+
+        function restart_btn(){
+            for (const btn of btn_correspondent){
+                btn.style.background = "white"
+            }
+            chooseRandomQuestion()
+        }
+
+        function select_id(id) {
+            return document.getElementById(id)
+        }
+
+        function style(id) {
+            return select_id(id).style
+        }
+
+        function readText(ruta_local) {
+            var texto = null;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", ruta_local, false);
+            xmlhttp.send();
+            if (xmlhttp.status == 200) {
+                texto = xmlhttp.responseText;
+            }
+            return texto;
+        }
+    </script>
+</body>
+</html>
